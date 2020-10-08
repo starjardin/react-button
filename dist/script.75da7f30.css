@@ -1,0 +1,16 @@
+button {
+  border: none;
+  padding : 0.5rem;
+  border-radius: 5px;
+}
+
+button:hover,
+button:focus {
+  background-color: #cccccc;
+}
+
+.danger {
+  background-color: red;
+}
+
+/*# sourceMappingURL=/script.75da7f30.css.map */
