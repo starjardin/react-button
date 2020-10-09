@@ -136,3 +136,7 @@ button.lg {
 .white {
   color: #ffffff;
 }
+
+button:disabled {
+  background: none;
+}
