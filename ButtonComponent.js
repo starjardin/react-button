@@ -1,10 +1,16 @@
 import React from "react";
 
 function ButtonComponent (props) {
-  console.log(props);
   return (
-    <button className={props.class}>
-      {props.icon && props.icon} button
+    <button 
+      className={
+        `${props.color && props.color} 
+         ${props.size && props.size}
+         ${props.variant && props.variant}
+        `
+      }
+    >
+      button
     </button>
   )
 }

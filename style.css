@@ -1,4 +1,6 @@
 button {
+  display: block;
+  margin: 1rem;
   border: none;
   padding : 0.5rem;
   border-radius: 5px;
@@ -9,6 +11,55 @@ button:focus {
   background-color: #cccccc;
 }
 
+.default {
+  background-color: #3F3F3F;
+}
+
+.default {
+  background-color: #E0E0E0;
+}
+
 .danger {
-  background-color: red;
+  background-color: #D32F2F;
+}
+
+.primary {
+  background-color: #2962FF;
+}
+
+.secondary {
+  background-color: #455A64;
+}
+
+.danger:hover {
+  background-color: #9A0007;
+}
+
+.primary:hover {
+  background-color: #0039CB;
+}
+
+.secondary:hover {
+  background-color: #1C313A;
+}
+
+.outline {
+  border: 1px solid #2962FF;
+  background: none;
+}
+
+button.sm {
+  padding: .5rem;
+}
+
+button.md {
+  padding: 1rem;
+}
+
+button.lg {
+  padding: 1.5rem;
+}
+
+.text {
+  background: none;
 }
