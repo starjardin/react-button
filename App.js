@@ -4,22 +4,29 @@ import "./style.scss";
 
 export class App extends Component {
   render () {
+    const src = "./assets/arrow-left.svg"
     return (
       <div>
         <ButtonComponent variant="text" />
         <ButtonComponent variant="outline" />
         <ButtonComponent variant="text" />
+        <ButtonComponent shadow="shadow" />
+        <ButtonComponent color="white grey blue" />
         <ButtonComponent 
           startIcon="
             startIcon
             icon 
-            shopping
-        "/>
+            shopping"
+            bgColor="primary"
+            color="white"
+        />
         <ButtonComponent 
           startIcon="
             startIcon
             icon
             arrow-left"
+            bgColor="primary"
+            color="white"
         />
         <ButtonComponent 
           startIcon="
@@ -27,6 +34,8 @@ export class App extends Component {
             icon
             arrow-right
           "
+          bgColor="primary"
+          color="white"
         />
         <ButtonComponent 
           startIcon="
@@ -34,6 +43,8 @@ export class App extends Component {
             icon
             duplicate
           "
+          bgColor="primary"
+          color="white"
         />
         <ButtonComponent 
           startIcon="
@@ -41,6 +52,8 @@ export class App extends Component {
             icon
             filter
           "
+          bgColor="primary"
+          color="white"
         />
         <ButtonComponent 
           endIcon="
@@ -48,6 +61,8 @@ export class App extends Component {
             icon
             arrow-left
           "
+          bgColor="primary"
+          color="white"
         />
         <ButtonComponent 
           endIcon="
@@ -55,6 +70,8 @@ export class App extends Component {
             icon
             arrow-right
           "
+          bgColor="primary"
+          color="white"
         />
         <ButtonComponent 
           endIcon="
@@ -62,6 +79,8 @@ export class App extends Component {
             icon
             filter
           "
+          bgColor="primary"
+          color="white"
         />
         <ButtonComponent 
           endIcon="
@@ -69,6 +88,8 @@ export class App extends Component {
             icon
             shopping
           "
+          bgColor="primary"
+          color="white"
         />
         <ButtonComponent 
           endIcon="
@@ -76,15 +97,38 @@ export class App extends Component {
             icon
             duplicate
           "
+          bgColor="primary"
+          color="white"
         />
         <ButtonComponent  disabled/>
-        <ButtonComponent size="sm" />
-        <ButtonComponent size="md" />
-        <ButtonComponent size="lg" />
-        <ButtonComponent color="default"/>
-        <ButtonComponent color="primary"/>
-        <ButtonComponent color="secondary"/>
-        <ButtonComponent color="danger"/>
+        <ButtonComponent />
+        <ButtonComponent 
+          size="sm" 
+          bgColor="primary"
+          color="white"
+        />
+        <ButtonComponent 
+          size="md" 
+          bgColor="primary"
+          color="white"
+        />
+        <ButtonComponent 
+          size="lg" 
+          bgColor="primary"
+          color="white"
+        />
+        <ButtonComponent 
+          bgColor="primary" 
+          color="white"
+        />
+        <ButtonComponent 
+          bgColor="secondary" 
+          color="white"
+        />
+        <ButtonComponent bgColor="danger" color="white"/>
+        <ButtonComponent 
+          disabled
+        />
       </div>
     )
   }

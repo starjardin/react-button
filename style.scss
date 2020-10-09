@@ -6,12 +6,8 @@ button {
   border-radius: 5px;
 }
 
-button:hover,
-button:focus {
-  background-color: #cccccc;
-}
-
-.default {
+.default:hover,
+.default:focus {
   background-color: #3F3F3F;
 }
 
@@ -48,6 +44,12 @@ button:focus {
   background: none;
 }
 
+.outline:hover {
+  border: 1px solid #2962FF;
+  background: none;
+}
+
+
 button.sm {
   padding: .5rem;
 }
@@ -66,7 +68,7 @@ button.lg {
 
 .icon {
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 50% 50%;
 }
 
 .startIcon {
@@ -121,4 +123,16 @@ button.lg {
 
 .endIcon.filter {
   background-image: url(./assets/filter.svg)
+}
+
+.shadow {
+  box-shadow: 1px 1px 1px #cccccc;
+}
+
+.grey {
+  color: grey
+}
+
+.white {
+  color: #ffffff;
 }
