@@ -1,0 +1,124 @@
+button {
+  display: block;
+  margin: 1rem;
+  border: none;
+  padding : 0.5rem;
+  border-radius: 5px;
+}
+
+button:hover,
+button:focus {
+  background-color: #cccccc;
+}
+
+.default {
+  background-color: #3F3F3F;
+}
+
+.default {
+  background-color: #E0E0E0;
+}
+
+.danger {
+  background-color: #D32F2F;
+}
+
+.primary {
+  background-color: #2962FF;
+}
+
+.secondary {
+  background-color: #455A64;
+}
+
+.danger:hover {
+  background-color: #9A0007;
+}
+
+.primary:hover {
+  background-color: #0039CB;
+}
+
+.secondary:hover {
+  background-color: #1C313A;
+}
+
+.outline {
+  border: 1px solid #2962FF;
+  background: none;
+}
+
+button.sm {
+  padding: .5rem;
+}
+
+button.md {
+  padding: 1rem;
+}
+
+button.lg {
+  padding: 1.5rem;
+}
+
+.text {
+  background: none;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.startIcon {
+  padding-left: 3rem;
+  background-position: left center;
+}
+
+@function img($filename) {
+  @return url("./assets/#{$filename}");
+};
+
+.startIcon.shopping {
+  background-image: url(./assets/shopping.svg);
+}
+
+.startIcon.duplicate {
+  background-image: url(./assets/duplicate.svg);
+}
+
+.startIcon.arrow-left {
+  background-image: url(./assets/arrow-left.svg);
+}
+
+.startIcon.arrow-right {
+  background-image: url(./assets/arrow-right.svg);
+}
+
+.startIcon.filter {
+  background-image: url(./assets/filter.svg);
+}
+
+.endIcon {
+  padding-right: 3rem;
+  background-position: right center;
+}
+
+.endIcon.duplicate {
+  background-image: url(./assets/duplicate.svg)
+}
+
+.endIcon.shopping {
+  background-image: url(./assets/shopping.svg)
+}
+
+.endIcon.arrow-left {
+  background-image: url(./assets/arrow-left.svg)
+}
+
+.endIcon.arrow-right {
+  background-image: url(./assets/arrow-right.svg)
+}
+
+.endIcon.filter {
+  background-image: url(./assets/filter.svg)
+}
