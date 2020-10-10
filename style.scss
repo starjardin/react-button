@@ -1,65 +1,92 @@
+$primary_color : #2962FF;
+$seconadry_color : #455A64;
+$danger : #D32F2F;
+$shadow_color : #E0E0E0;
+$default-bgColor_hover : #3F3F3F;
+$default-bgColor : #E0E0E0;
+$danger_hover : #9A0007;
+$primary_hover : #0039CB;
+$outline_hover-bg :#3D5AFE;
+$secondary_hover : #1C313A;
+$disabled_bg : #E0E0E0;
+
+@mixin sm_size {
+  padding: 0.5rem;
+}
+
+@mixin md_size {
+  padding: 1rem;
+}
+
+@mixin lg_size {
+  padding: 1.5rem;
+  padding-block: 1rem;
+}
+ 
+
 button {
   display: block;
   margin: 1rem;
   border: none;
   padding : 0.5rem;
   border-radius: 5px;
+  box-shadow:0 0 5px 1px $shadow_color;
 }
 
-.default:hover,
-.default:focus {
-  background-color: #3F3F3F;
+.default-bgColor:hover,
+.default-bgColor:focus {
+  background-color: $default-bgColor_hover;
 }
 
-.default {
-  background-color: #E0E0E0;
+.default-bgColor {
+  background-color: $default-bgColor;
 }
 
 .danger {
-  background-color: #D32F2F;
+  background-color: $danger;
 }
 
 .primary {
-  background-color: #2962FF;
+  background-color: $primary_color;
 }
 
 .secondary {
-  background-color: #455A64;
+  background-color: $seconadry_color;
 }
 
 .danger:hover {
-  background-color: #9A0007;
+  background-color: $danger_hover;
 }
 
 .primary:hover {
-  background-color: #0039CB;
+  background-color: $primary_hover;
 }
 
 .secondary:hover {
-  background-color: #1C313A;
+  background-color: $secondary_hover;
 }
 
 .outline {
-  border: 1px solid #2962FF;
+  border: 1px solid $primary_color;
   background: none;
 }
 
 .outline:hover {
-  border: 1px solid #2962FF;
-  background: none;
+  border: 1px solid $outline_hover-bg;
+  background: $primary_color 0%;
 }
 
 
 button.sm {
-  padding: .5rem;
+  @include sm_size;
 }
 
 button.md {
-  padding: 1rem;
+  @include md_size;
 }
 
 button.lg {
-  padding: 1.5rem;
+  @include lg_size;
 }
 
 .text {
@@ -130,7 +157,7 @@ button.lg {
 }
 
 .grey {
-  color: grey
+  color: $seconadry_color;
 }
 
 .white {
@@ -138,5 +165,23 @@ button.lg {
 }
 
 button:disabled {
-  background: none;
+  background: $disabled_bg;
+  box-shadow: none;
+}
+
+button:disabled:hover {
+  background: #E0E0E0;
+}
+
+.text {
+  background-color: white;
+  color: $primary_color;
+}
+
+button:disabled.text {
+  background-color: white;
+}
+
+.disabledBoxShadow {
+  box-shadow: none;
 }
