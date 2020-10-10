@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
+import "./assets/arrow-left.svg";
 
 function ButtonComponent (props) {
-  console.log(props.disabled);
   return (
   <button
       className={

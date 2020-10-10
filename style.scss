@@ -54,15 +54,18 @@ button {
   background-color: $seconadry_color;
 }
 
-.danger:hover {
+.danger:hover,
+.danger:focus {
   background-color: $danger_hover;
 }
 
-.primary:hover {
+.primary:hover,
+.primary:focus {
   background-color: $primary_hover;
 }
 
-.secondary:hover {
+.secondary:hover,
+.secondary:focus {
   background-color: $secondary_hover;
 }
 
@@ -71,7 +74,8 @@ button {
   background: none;
 }
 
-.outline:hover {
+.outline:hover,
+.outline:focus {
   border: 1px solid $outline_hover-bg;
   background: $primary_color 0%;
 }

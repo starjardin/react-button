@@ -7,11 +7,22 @@ export class App extends Component {
     const src = "./assets/arrow-left.svg"
     return (
       <div>
-        <ButtonComponent variant="text" />
-        <ButtonComponent variant="outline" />
-        <ButtonComponent variant="text" />
-        <ButtonComponent shadow="shadow" />
-        <ButtonComponent color="white grey blue" />
+        <ButtonComponent 
+          variant="text"
+        >Default</ButtonComponent>
+        <ButtonComponent 
+          variant="outline"
+        >Default</ButtonComponent>
+        <ButtonComponent 
+          variant="outline"
+          size="lg"
+        >Default</ButtonComponent>
+        <ButtonComponent 
+          variant="text"
+        >Default</ButtonComponent>
+        <ButtonComponent 
+          color="white"
+        >Default</ButtonComponent>
         <ButtonComponent 
           startIcon="
             startIcon
@@ -19,7 +30,7 @@ export class App extends Component {
             shopping"
             bgColor="primary"
             color="white"
-        />
+        >Default</ButtonComponent>
         <ButtonComponent 
           startIcon="
             startIcon
@@ -27,7 +38,7 @@ export class App extends Component {
             arrow-left"
             bgColor="primary"
             color="white"
-        />
+        >Default</ButtonComponent>
         <ButtonComponent 
           startIcon="
             startIcon
@@ -36,7 +47,7 @@ export class App extends Component {
           "
           bgColor="primary"
           color="white"
-        />
+        >Default</ButtonComponent>
         <ButtonComponent 
           startIcon="
             startIcon
@@ -45,7 +56,7 @@ export class App extends Component {
           "
           bgColor="primary"
           color="white"
-        />
+        >Default</ButtonComponent>
         <ButtonComponent 
           startIcon="
             startIcon
@@ -54,7 +65,7 @@ export class App extends Component {
           "
           bgColor="primary"
           color="white"
-        />
+        >Default</ButtonComponent>
         <ButtonComponent 
           endIcon="
             endIcon 
@@ -63,7 +74,7 @@ export class App extends Component {
           "
           bgColor="primary"
           color="white"
-        />
+        >Default</ButtonComponent>
         <ButtonComponent 
           endIcon="
             endIcon 
@@ -72,7 +83,7 @@ export class App extends Component {
           "
           bgColor="primary"
           color="white"
-        />
+        >Default</ButtonComponent>
         <ButtonComponent 
           endIcon="
             endIcon 
@@ -81,7 +92,7 @@ export class App extends Component {
           "
           bgColor="primary"
           color="white"
-        />
+        >Default</ButtonComponent>
         <ButtonComponent 
           endIcon="
             endIcon 
@@ -90,7 +101,7 @@ export class App extends Component {
           "
           bgColor="primary"
           color="white"
-        />
+        >Default</ButtonComponent>
         <ButtonComponent 
           endIcon="
             endIcon 
@@ -99,36 +110,42 @@ export class App extends Component {
           "
           bgColor="primary"
           color="white"
-        />
-        <ButtonComponent  disabled/>
-        <ButtonComponent />
+        >Default</ButtonComponent>
+        <ButtonComponent  disabled
+        >Disabled</ButtonComponent>
         <ButtonComponent 
           size="sm" 
           bgColor="primary"
           color="white"
-        />
+        >Default</ButtonComponent>
         <ButtonComponent 
           size="md" 
           bgColor="primary"
           color="white"
-        />
+        >Default</ButtonComponent>
         <ButtonComponent 
           size="lg" 
           bgColor="primary"
           color="white"
-        />
+        >Default</ButtonComponent>
         <ButtonComponent 
           bgColor="primary" 
           color="white"
-        />
+        >primary</ButtonComponent>
         <ButtonComponent 
           bgColor="secondary" 
           color="white"
-        />
-        <ButtonComponent bgColor="danger" color="white"/>
+        >Secondary</ButtonComponent>
+        <ButtonComponent bgColor="danger" color="white"
+        >danger</ButtonComponent>
+        <ButtonComponent bgColor="danger" color="white" size="lg"
+        >danger</ButtonComponent>
         <ButtonComponent 
           disabled
-        />
+        >Disabled</ButtonComponent>
+        <ButtonComponent 
+          disabledShadow
+        >Default</ButtonComponent>
       </div>
     )
   }
