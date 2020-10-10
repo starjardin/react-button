@@ -11,13 +11,13 @@ function ButtonComponent (props) {
          ${props.startIcon ? props.startIcon : ""}
          ${props.endIcon ? props.endIcon : ""}
          ${props.shadow ? props.shadow : "default-shadow"}
-         ${props.color ? props.color : "default"}
+         ${props.color ? props.color : "default-color"}
+         ${props.disabledShadow ? "disabledBoxShadow" : ""}
         `
       }
-
-      disabled={props.disabled && "disabled"}
+      disabled={props.disabled}
     >
-      {props.icon && <img scr={props.icon}/>}button
+      {props.children}
     </button>
   )
 }
