@@ -160,4 +160,9 @@ button:disabled.text {
   box-shadow: none;
 }
 
+.container {
+  display: flex;
+  justify-content: safe;
+}
+
 /*# sourceMappingURL=/script.75da7f30.css.map */

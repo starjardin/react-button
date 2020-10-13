@@ -28452,24 +28452,10 @@ var App = /*#__PURE__*/function (_Component) {
       }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         color: "white"
       }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        startIcon: "\r startIcon\r icon \r shopping",
-        bgColor: "primary",
-        color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        startIcon: "\r startIcon\r icon\r arrow-left",
-        bgColor: "primary",
-        color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        endIcon: "\r endIcon \r icon\r shopping\r ",
-        bgColor: "primary",
-        color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        endIcon: "\r endIcon \r icon\r duplicate\r ",
-        bgColor: "primary",
-        color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         disabled: true
-      }, "Disabled"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "Disabled"), /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         size: "sm",
         bgColor: "primary",
         color: "white"
@@ -28490,15 +28476,17 @@ var App = /*#__PURE__*/function (_Component) {
       }, "Secondary"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         bgColor: "danger",
         color: "white"
-      }, "danger"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "danger")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         bgColor: "danger",
         color: "white",
         size: "lg"
-      }, "danger"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "danger"), "<Button disabled />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         disabled: true
-      }, "Disabled"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "Disabled"), "<Button disableShadow />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         disabledShadow: true
-      }, "Default"));
+      }, "Default")));
     }
   }]);
 
