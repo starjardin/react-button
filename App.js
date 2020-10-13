@@ -40,60 +40,6 @@ export class App extends Component {
             color="white"
         >Default</ButtonComponent>
         <ButtonComponent 
-          startIcon="
-            startIcon
-            icon
-            arrow-right
-          "
-          bgColor="primary"
-          color="white"
-        >Default</ButtonComponent>
-        <ButtonComponent 
-          startIcon="
-            startIcon
-            icon
-            duplicate
-          "
-          bgColor="primary"
-          color="white"
-        >Default</ButtonComponent>
-        <ButtonComponent 
-          startIcon="
-            startIcon
-            icon
-            filter
-          "
-          bgColor="primary"
-          color="white"
-        >Default</ButtonComponent>
-        <ButtonComponent 
-          endIcon="
-            endIcon 
-            icon
-            arrow-left
-          "
-          bgColor="primary"
-          color="white"
-        >Default</ButtonComponent>
-        <ButtonComponent 
-          endIcon="
-            endIcon 
-            icon
-            arrow-right
-          "
-          bgColor="primary"
-          color="white"
-        >Default</ButtonComponent>
-        <ButtonComponent 
-          endIcon="
-            endIcon 
-            icon
-            filter
-          "
-          bgColor="primary"
-          color="white"
-        >Default</ButtonComponent>
-        <ButtonComponent 
           endIcon="
             endIcon 
             icon

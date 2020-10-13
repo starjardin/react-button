@@ -28460,30 +28460,6 @@ var App = /*#__PURE__*/function (_Component) {
         bgColor: "primary",
         color: "white"
       }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        startIcon: "\r startIcon\r icon\r arrow-right\r ",
-        bgColor: "primary",
-        color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        startIcon: "\r startIcon\r icon\r duplicate\r ",
-        bgColor: "primary",
-        color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        startIcon: "\r startIcon\r icon\r filter\r ",
-        bgColor: "primary",
-        color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        endIcon: "\r endIcon \r icon\r arrow-left\r ",
-        bgColor: "primary",
-        color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        endIcon: "\r endIcon \r icon\r arrow-right\r ",
-        bgColor: "primary",
-        color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        endIcon: "\r endIcon \r icon\r filter\r ",
-        bgColor: "primary",
-        color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         endIcon: "\r endIcon \r icon\r shopping\r ",
         bgColor: "primary",
         color: "white"
