@@ -28285,7 +28285,9 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"ButtonComponent.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"assets/arrow-left.svg":[function(require,module,exports) {
+module.exports = "/arrow-left.c9e1e661.svg";
+},{}],"ButtonComponent.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28295,18 +28297,21 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+require("./assets/arrow-left.svg");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function ButtonComponent(props) {
-  console.log(props);
+  var label = "".concat(props.label) || "".concat(props.children);
   return /*#__PURE__*/_react.default.createElement("button", {
-    className: props.class
-  }, props.icon && props.icon, " button");
+    className: "".concat(props.bgColor ? props.bgColor : "default-bgColor", " \n         ").concat(props.size ? props.size : "default-size", "\n         ").concat(props.variant ? props.variant : "default-variant", "\n         ").concat(props.shadow ? props.shadow : "default-shadow", "\n         ").concat(props.color ? props.color : "default-color", "\n         ").concat(props.disabledShadow ? "disabledBoxShadow" : "", "\n        "),
+    disabled: props.disabled
+  }, props.children);
 }
 
 var _default = ButtonComponent;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./assets/arrow-left.svg":"assets/arrow-left.svg"}],"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -28373,12 +28378,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/bundle-url.js"}],"style.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/bundle-url.js"}],"style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"App.js":[function(require,module,exports) {
+},{"./assets\\shopping.svg":[["shopping.73777345.svg","assets/shopping.svg"],"assets/shopping.svg"],"./assets\\duplicate.svg":[["duplicate.25383b4f.svg","assets/duplicate.svg"],"assets/duplicate.svg"],"./assets\\arrow-left.svg":[["arrow-left.c9e1e661.svg","assets/arrow-left.svg"],"assets/arrow-left.svg"],"./assets\\arrow-right.svg":[["arrow-right.04922524.svg","assets/arrow-right.svg"],"assets/arrow-right.svg"],"./assets\\filter.svg":[["filter.604132dd.svg","assets/filter.svg"],"assets/filter.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28390,7 +28395,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _ButtonComponent = _interopRequireDefault(require("./ButtonComponent.js"));
 
-require("./style.css");
+require("./style.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28434,17 +28439,90 @@ var App = /*#__PURE__*/function (_Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
+      var src = "./assets/arrow-left.svg";
       return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        class: "danger"
-      }), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        icon: /*#__PURE__*/_react.default.createElement("img", {
-          src: "./assets/shopping.svg"
-        })
-      }), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        variant: "outline"
-      }), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         variant: "text"
-      }));
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        variant: "outline"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        variant: "outline",
+        size: "lg"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        variant: "text"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        startIcon: "\r startIcon\r icon \r shopping",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        startIcon: "\r startIcon\r icon\r arrow-left",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        startIcon: "\r startIcon\r icon\r arrow-right\r ",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        startIcon: "\r startIcon\r icon\r duplicate\r ",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        startIcon: "\r startIcon\r icon\r filter\r ",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        endIcon: "\r endIcon \r icon\r arrow-left\r ",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        endIcon: "\r endIcon \r icon\r arrow-right\r ",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        endIcon: "\r endIcon \r icon\r filter\r ",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        endIcon: "\r endIcon \r icon\r shopping\r ",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        endIcon: "\r endIcon \r icon\r duplicate\r ",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        disabled: true
+      }, "Disabled"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        size: "sm",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        size: "md",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        size: "lg",
+        bgColor: "primary",
+        color: "white"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        bgColor: "primary",
+        color: "white"
+      }, "primary"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        bgColor: "secondary",
+        color: "white"
+      }, "Secondary"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        bgColor: "danger",
+        color: "white"
+      }, "danger"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        bgColor: "danger",
+        color: "white",
+        size: "lg"
+      }, "danger"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        disabled: true
+      }, "Disabled"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        disabledShadow: true
+      }, "Default"));
     }
   }]);
 
@@ -28452,7 +28530,7 @@ var App = /*#__PURE__*/function (_Component) {
 }(_react.Component);
 
 exports.App = App;
-},{"react":"node_modules/react/index.js","./ButtonComponent.js":"ButtonComponent.js","./style.css":"style.css"}],"script.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./ButtonComponent.js":"ButtonComponent.js","./style.scss":"style.scss"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -28492,7 +28570,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49885" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63556" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

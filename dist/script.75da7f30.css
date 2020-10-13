@@ -1,16 +1,163 @@
 button {
+  display: block;
+  margin: 1rem;
   border: none;
-  padding : 0.5rem;
+  padding: 0.5rem;
   border-radius: 5px;
+  box-shadow: 0 0 5px 1px #E0E0E0;
 }
 
-button:hover,
-button:focus {
-  background-color: #cccccc;
+.default-bgColor:hover,
+.default-bgColor:focus {
+  background-color: #3F3F3F;
+}
+
+.default-bgColor {
+  background-color: #E0E0E0;
 }
 
 .danger {
-  background-color: red;
+  background-color: #D32F2F;
+}
+
+.primary {
+  background-color: #2962FF;
+}
+
+.secondary {
+  background-color: #455A64;
+}
+
+.danger:hover,
+.danger:focus {
+  background-color: #9A0007;
+}
+
+.primary:hover,
+.primary:focus {
+  background-color: #0039CB;
+}
+
+.secondary:hover,
+.secondary:focus {
+  background-color: #1C313A;
+}
+
+.outline {
+  border: 1px solid #2962FF;
+  background: none;
+}
+
+.outline:hover,
+.outline:focus {
+  border: 1px solid #3D5AFE;
+  background: #2962FF 0%;
+}
+
+button.sm {
+  padding: 0.5rem;
+}
+
+button.md {
+  padding: 1rem;
+}
+
+button.lg {
+  padding: 1.5rem;
+  padding-block: 1rem;
+}
+
+.text {
+  background: none;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+}
+
+.startIcon {
+  padding-left: 3rem;
+  background-position: left center;
+}
+
+.startIcon.shopping {
+  background-image: url(/shopping.73777345.svg);
+}
+
+.startIcon.duplicate {
+  background-image: url(/duplicate.25383b4f.svg);
+}
+
+.startIcon.arrow-left {
+  background-image: url(/arrow-left.c9e1e661.svg);
+}
+
+.startIcon.arrow-right {
+  background-image: url(/arrow-right.04922524.svg);
+}
+
+.startIcon.filter {
+  background-image: url(/filter.604132dd.svg);
+}
+
+.endIcon {
+  padding-right: 3rem;
+  background-position: right center;
+}
+
+.endIcon.duplicate {
+  background-image: url(/duplicate.25383b4f.svg);
+}
+
+.endIcon.shopping {
+  background-image: url(/shopping.73777345.svg);
+}
+
+.endIcon.arrow-left {
+  background-image: url(/arrow-left.c9e1e661.svg);
+}
+
+.endIcon.arrow-right {
+  background-image: url(/arrow-right.04922524.svg);
+}
+
+.endIcon.filter {
+  background-image: url(/filter.604132dd.svg);
+}
+
+.shadow {
+  box-shadow: 1px 1px 1px #cccccc;
+}
+
+.grey {
+  color: #455A64;
+}
+
+.white {
+  color: #ffffff;
+}
+
+button:disabled {
+  background: #E0E0E0;
+  box-shadow: none;
+}
+
+button:disabled:hover {
+  background: #E0E0E0;
+}
+
+.text {
+  background-color: white;
+  color: #2962FF;
+}
+
+button:disabled.text {
+  background-color: white;
+}
+
+.disabledBoxShadow {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=/script.75da7f30.css.map */
