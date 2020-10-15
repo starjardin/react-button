@@ -1,3 +1,9 @@
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
 button {
   display: block;
   margin: 1rem;
@@ -81,51 +87,6 @@ button.lg {
   background-position: left center;
 }
 
-.startIcon.shopping {
-  background-image: url(/shopping.73777345.svg);
-}
-
-.startIcon.duplicate {
-  background-image: url(/duplicate.25383b4f.svg);
-}
-
-.startIcon.arrow-left {
-  background-image: url(/arrow-left.c9e1e661.svg);
-}
-
-.startIcon.arrow-right {
-  background-image: url(/arrow-right.04922524.svg);
-}
-
-.startIcon.filter {
-  background-image: url(/filter.604132dd.svg);
-}
-
-.endIcon {
-  padding-right: 3rem;
-  background-position: right center;
-}
-
-.endIcon.duplicate {
-  background-image: url(/duplicate.25383b4f.svg);
-}
-
-.endIcon.shopping {
-  background-image: url(/shopping.73777345.svg);
-}
-
-.endIcon.arrow-left {
-  background-image: url(/arrow-left.c9e1e661.svg);
-}
-
-.endIcon.arrow-right {
-  background-image: url(/arrow-right.04922524.svg);
-}
-
-.endIcon.filter {
-  background-image: url(/filter.604132dd.svg);
-}
-
 .shadow {
   box-shadow: 1px 1px 1px #cccccc;
 }
@@ -161,8 +122,24 @@ button:disabled.text {
 }
 
 .container {
+  margin-top: 2rem;
   display: flex;
-  justify-content: safe;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button .startIcon {
+  padding-inline-start: 0.5rem;
+  padding-inline-end: 0.5rem;
+  padding-block-end: 0.3 rem;
+  padding-block-start: 0.3rem;
+}
+
+button .endIcon {
+  padding-inline-start: 0.5rem;
+  padding-inline-end: 0.5rem;
+  padding-block-end: 0.3rem;
+  padding-block-start: 0.3 rem;
 }
 
 /*# sourceMappingURL=/script.75da7f30.css.map */

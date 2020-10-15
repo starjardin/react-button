@@ -23,6 +23,11 @@ $disabled_bg : #E0E0E0;
   padding-block: 1rem;
 }
  
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
 
 button {
   display: block;
@@ -107,55 +112,6 @@ button.lg {
   background-position: left center;
 }
 
-@function img($filename) {
-  @return url("./assets/#{$filename}");
-};
-
-.startIcon.shopping {
-  background-image: url(./assets/shopping.svg);
-}
-
-.startIcon.duplicate {
-  background-image: url(./assets/duplicate.svg);
-}
-
-.startIcon.arrow-left {
-  background-image: url(./assets/arrow-left.svg);
-}
-
-.startIcon.arrow-right {
-  background-image: url(./assets/arrow-right.svg);
-}
-
-.startIcon.filter {
-  background-image: url(./assets/filter.svg);
-}
-
-.endIcon {
-  padding-right: 3rem;
-  background-position: right center;
-}
-
-.endIcon.duplicate {
-  background-image: url(./assets/duplicate.svg)
-}
-
-.endIcon.shopping {
-  background-image: url(./assets/shopping.svg)
-}
-
-.endIcon.arrow-left {
-  background-image: url(./assets/arrow-left.svg)
-}
-
-.endIcon.arrow-right {
-  background-image: url(./assets/arrow-right.svg)
-}
-
-.endIcon.filter {
-  background-image: url(./assets/filter.svg)
-}
-
 .shadow {
   box-shadow: 1px 1px 1px #cccccc;
 }
@@ -190,7 +146,23 @@ button:disabled.text {
   box-shadow: none;
 }
 
-.container  {
+.container {
+  margin-top: 2rem;
   display: flex;
-  justify-content: safe;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button .startIcon {
+  padding-inline-start: .5rem;
+  padding-inline-end: .5rem;
+  padding-block-end: .3   rem;
+  padding-block-start: .3rem;
+}
+
+button .endIcon {
+  padding-inline-start: .5rem;
+  padding-inline-end: .5rem;
+  padding-block-end: .3rem;
+  padding-block-start: .3 rem;
 }

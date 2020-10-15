@@ -28302,11 +28302,17 @@ require("./assets/arrow-left.svg");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function ButtonComponent(props) {
-  var label = "".concat(props.label) || "".concat(props.children);
+  var label = "".concat(props.label || props.children);
+  var startIcon = "".concat(props.startIcon && props.startIcon, " startIcon");
+  var endIcon = "".concat(props.endIcon && props.endIcon, " endIcon");
   return /*#__PURE__*/_react.default.createElement("button", {
     className: "".concat(props.bgColor ? props.bgColor : "default-bgColor", " \n         ").concat(props.size ? props.size : "default-size", "\n         ").concat(props.variant ? props.variant : "default-variant", "\n         ").concat(props.shadow ? props.shadow : "default-shadow", "\n         ").concat(props.color ? props.color : "default-color", "\n         ").concat(props.disabledShadow ? "disabledBoxShadow" : "", "\n        "),
     disabled: props.disabled
-  }, props.children);
+  }, props.startIcon && /*#__PURE__*/_react.default.createElement("i", {
+    className: "fa ".concat(startIcon)
+  }), label, props.endIcon && /*#__PURE__*/_react.default.createElement("i", {
+    className: "fa ".concat(endIcon)
+  }));
 }
 
 var _default = ButtonComponent;
@@ -28383,7 +28389,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./assets\\shopping.svg":[["shopping.73777345.svg","assets/shopping.svg"],"assets/shopping.svg"],"./assets\\duplicate.svg":[["duplicate.25383b4f.svg","assets/duplicate.svg"],"assets/duplicate.svg"],"./assets\\arrow-left.svg":[["arrow-left.c9e1e661.svg","assets/arrow-left.svg"],"assets/arrow-left.svg"],"./assets\\arrow-right.svg":[["arrow-right.04922524.svg","assets/arrow-right.svg"],"assets/arrow-right.svg"],"./assets\\filter.svg":[["filter.604132dd.svg","assets/filter.svg"],"assets/filter.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"App.js":[function(require,module,exports) {
+},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28440,53 +28446,81 @@ var App = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       var src = "./assets/arrow-left.svg";
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         variant: "text"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "Default"))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         variant: "outline"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "Default"))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         variant: "outline",
         size: "lg"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        variant: "text"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
-        disabled: true
-      }, "Disabled"), /*#__PURE__*/_react.default.createElement("div", {
+      }, "Default"))), /*#__PURE__*/_react.default.createElement("div", {
         className: "container"
-      }, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        variant: "text"
+      }, "Default"))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        startIcon: "fa-shopping-cart"
+      }, "Button ")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        startIcon: "fa-phone"
+      }, "Button ")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        startIcon: "fa-search"
+      }, "Button "))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        endIcon: "fa-trash-o"
+      }, "Button ")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        endIcon: "fa-tablet"
+      }, "Button ")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        endIcon: "fa-flag"
+      }, "Button "))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        color: "white"
+      }, "Default")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+        disabled: true
+      }, "Disabled"))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("div", null, "<button size=\"sm\" />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         size: "sm",
         bgColor: "primary",
         color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "Default")), /*#__PURE__*/_react.default.createElement("div", null, "<button size=\"md\" />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         size: "md",
         bgColor: "primary",
         color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "Default")), /*#__PURE__*/_react.default.createElement("div", null, "<button size=\"lg\" />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         size: "lg",
         bgColor: "primary",
         color: "white"
-      }, "Default"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "Default"))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("div", null, "< button primary />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         bgColor: "primary",
         color: "white"
-      }, "primary"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "primary")), /*#__PURE__*/_react.default.createElement("div", null, "<button secondary />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         bgColor: "secondary",
         color: "white"
-      }, "Secondary"), /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "Secondary")), /*#__PURE__*/_react.default.createElement("div", null, " < button danger />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         bgColor: "danger",
         color: "white"
-      }, "danger")), /*#__PURE__*/_react.default.createElement("div", {
+      }, "danger"))), /*#__PURE__*/_react.default.createElement("div", {
         className: "container"
-      }, /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, /*#__PURE__*/_react.default.createElement("div", null, "< button danger size=\"lg\" />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         bgColor: "danger",
         color: "white",
         size: "lg"
-      }, "danger"), "<Button disabled />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "danger")), /*#__PURE__*/_react.default.createElement("div", null, "<Button disabled />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         disabled: true
-      }, "Disabled"), "<Button disableShadow />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
+      }, "Disabled")), /*#__PURE__*/_react.default.createElement("div", null, "<Button disableShadow />", /*#__PURE__*/_react.default.createElement(_ButtonComponent.default, {
         disabledShadow: true
-      }, "Default")));
+      }, "Default"))));
     }
   }]);
 
@@ -28534,7 +28568,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63556" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49164" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

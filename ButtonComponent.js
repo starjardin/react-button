@@ -2,7 +2,9 @@ import React from 'react';
 import "./assets/arrow-left.svg";
 
 function ButtonComponent (props) {
-  const label = `${props.label}` || `${props.children}`
+  const label = `${props.label || props.children}`
+  const startIcon = `${props.startIcon && props.startIcon} startIcon`
+  const endIcon = `${props.endIcon && props.endIcon} endIcon`
   return (
   <button
       className={
@@ -16,7 +18,9 @@ function ButtonComponent (props) {
       }
       disabled={props.disabled}
     >
-      {props.children}
+      {props.startIcon && <i className={`fa ${startIcon}`}></i>}
+      {label}
+      {props.endIcon && <i className={`fa ${endIcon}`}></i>}
     </button>
   )
 }
